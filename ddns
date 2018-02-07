@@ -1,0 +1,6 @@
+#!/bin/bash
+while true;
+do
+  /usr/bin/python main.py record -a update -d mydomain.com -s office -v `curl ifconfig.co`;
+  sleep 30;
+done;

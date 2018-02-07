@@ -1,0 +1,20 @@
+[Unit]
+Description=ddns
+After=syslog.target
+After=network.target
+
+[Service]
+# Modify these two values and uncomment them if you have
+# repos with lots of files and get an HTTP error 500 because
+# of that
+###
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/ddns/aliyun-api
+ExecStart=/bin/bash ddns
+Restart=always
+Environment=USER=ubuntu HOME=/home/ubuntu/ddns/aliyun-api
+
+[Install]
+WantedBy=multi-user.target
