@@ -2,7 +2,13 @@ ALIYUN SDK
 ==================
 Based on official aliyun python sdk.
 
-## Commands Help
+# Commands Help
+usage main.py subcommand
+
+## Record Action Description
+
+Including subdomain operations and record operations
+
 ```$ python main.py record -h
 usage:  main.py record [-h] -a ACTION -d DOMAIN [-s HOST] [-t TYPE]
                             [-v VALUE] [-o OLD]
@@ -22,11 +28,6 @@ optional arguments:
   -o OLD, --old OLD     old value
 
 ```
-
-
-## Record Action Description
-
-Including subdomain operations and record operations
 
 ### SubDomain operations
 ####  add
@@ -61,4 +62,6 @@ Update the old record with new value if it exists, otherwise it will be created.
 Delete the record if it exists.
 
 ## Dependencies
+```
 pip install aliyun-python-sdk-core
+```
