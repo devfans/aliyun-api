@@ -8,7 +8,7 @@ from functools import wraps
 from core.api import errors
 from lib.dns import DnsApi
 
-logger = logging.getLogger('aliyun-api')
+logger = logging.getLogger(__name__)
 SUBCOMMANDS = {}
 
 def add_subcommand(subcommand):

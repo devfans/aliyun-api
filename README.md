@@ -5,7 +5,16 @@ Based on official aliyun python sdk.
 # Commands Help
 
 ```
-usage: python main.py subcommand
+usage: aliyun-api [-h] {record} ...
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+subcommands:
+  supported subcommands
+
+  {record}
+    record    operate on dns record
 ```
 ## Record Action Description
 

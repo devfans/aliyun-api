@@ -1,7 +1,7 @@
 import logging
 from aliyunsdkcore.client import AcsClient
 
-logger = logging.getLogger('DNS')
+logger = logging.getLogger(__name__)
 # script exit code
 class Status(object):
     def __init__(self):

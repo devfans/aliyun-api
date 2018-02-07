@@ -5,7 +5,7 @@ from aliyunsdkcore.request import RpcRequest
 from core.api import Api, errors
 import logging
 
-logger = logging.getLogger('DNS')
+logger = logging.getLogger(__name__)
 
 class DnsApi(Api):
     
