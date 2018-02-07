@@ -3,8 +3,10 @@ ALIYUN SDK
 Based on official aliyun python sdk.
 
 # Commands Help
-usage main.py subcommand
 
+```
+usage: python main.py subcommand
+```
 ## Record Action Description
 
 Including subdomain operations and record operations
